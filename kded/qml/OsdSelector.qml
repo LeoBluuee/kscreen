@@ -92,7 +92,7 @@ PlasmaCore.Dialog {
             switch (event.key) {
                 case Qt.Key_Return:
                 case Qt.Key_Enter:
-                    move(1)
+                    clicked(actionRepeater.itemAt(actionRepeater.currentIndex).actionId)
                     break
                 case Qt.Key_Right:
                     move(1)
